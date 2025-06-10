@@ -1,0 +1,55 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .bg { fill: #5a6d83; }
+    .line { stroke: #57d1e8; stroke-width: 3; }
+    .circle { fill: none; stroke: #57d1e8; stroke-width: 3; }
+    .text-main {
+      fill: white;
+      font-size: 36px;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      letter-spacing: 6px;
+    }
+    .text-sub {
+      fill: #57d1e8;
+      font-size: 12px;
+      font-family: Arial, sans-serif;
+      letter-spacing: 1px;
+    }
+  </style>
+
+  <!-- Background -->
+  <rect class="bg" width="100%" height="100%" />
+
+  <!-- Symbol group -->
+  <g transform="translate(150,115)">
+    <defs>
+      <circle id="dot" r="8"/>
+    </defs>
+
+    <!-- Central circle -->
+    <use href="#dot" class="circle" x="0" y="0"/>
+
+    <!-- Outer circles -->
+    <use href="#dot" class="circle" x="0" y="-40"/>
+    <use href="#dot" class="circle" x="35" y="-20"/>
+    <use href="#dot" class="circle" x="35" y="20"/>
+    <use href="#dot" class="circle" x="0" y="40"/>
+    <use href="#dot" class="circle" x="-35" y="20"/>
+    <use href="#dot" class="circle" x="-35" y="-20"/>
+
+    <!-- Connecting lines -->
+    <line class="line" x1="0" y1="-8" x2="0" y2="-32"/>
+    <line class="line" x1="7" y1="-4" x2="27" y2="-15.5"/>
+    <line class="line" x1="7" y1="4" x2="27" y2="15.5"/>
+    <line class="line" x1="0" y1="8" x2="0" y2="32"/>
+    <line class="line" x1="-7" y1="4" x2="-27" y2="15.5"/>
+    <line class="line" x1="-7" y1="-4" x2="-27" y2="-15.5"/>
+  </g>
+
+  <!-- Main text -->
+  <text class="text-main" x="150" y="210" text-anchor="middle">SYMANTIX</text>
+
+  <!-- Tagline -->
+  <text class="text-sub" x="150" y="228" text-anchor="middle">HIGH-QUALITY ACTIONABLE DATA</text>
+</svg>

@@ -12,42 +12,49 @@ import SettingsSuggestRoundedIcon from '@mui/icons-material/SettingsSuggestRound
 import SupportAgentRoundedIcon from '@mui/icons-material/SupportAgentRounded';
 import ThumbUpAltRoundedIcon from '@mui/icons-material/ThumbUpAltRounded';
 
+import AddShoppingCartRoundedIcon from '@mui/icons-material/AddShoppingCartRounded';
+import DataUsageRoundedIcon from '@mui/icons-material/DataUsageRounded';
+import InsightsRoundedIcon from '@mui/icons-material/InsightsRounded';
+import CheckCircleOutlineRoundedIcon from '@mui/icons-material/CheckCircleOutlineRounded';
+import ArticleRoundedIcon from '@mui/icons-material/ArticleRounded';
+import ManageSearchRoundedIcon from '@mui/icons-material/ManageSearchRounded';
+
 const items = [
   {
-    icon: <SettingsSuggestRoundedIcon />,
-    title: 'Adaptable performance',
+    icon: <ManageSearchRoundedIcon />,
+    title: 'Verified Data Provenance',
     description:
-      'Our product effortlessly adjusts to your needs, boosting efficiency and simplifying your tasks.',
+      'Every dataset includes clear lineage documentation, detailing source origins, collection methods, and processing steps—ensuring transparency and trust.',
   },
   {
-    icon: <ConstructionRoundedIcon />,
-    title: 'Built to last',
+    icon: <CheckCircleOutlineRoundedIcon />,
+    title: 'Quality Assured & Standards-Aligned',
     description:
-      'Experience unmatched durability that goes above and beyond with lasting investment.',
+      'Structured with comprehensive metadata, data dictionaries, and usage notes that support usability and compliance.',
   },
   {
-    icon: <ThumbUpAltRoundedIcon />,
-    title: 'Great user experience',
+    icon: <ArticleRoundedIcon />,
+    title: 'Fully Documented & Metadata-Rich',
     description:
       'Integrate our product into your routine with an intuitive and easy-to-use interface.',
   },
   {
-    icon: <AutoFixHighRoundedIcon />,
-    title: 'Innovative functionality',
+    icon: <AddShoppingCartRoundedIcon />,
+    title: 'Seamless Access via AWS Data Exchange',
     description:
-      'Stay ahead with features that set new standards, addressing your evolving needs better than the rest.',
+      'Available on AWS Marketplace for secure, scalable, and subscription-based delivery—enabling frictionless integration into cloud-native analytics pipelines.',
   },
   {
-    icon: <SupportAgentRoundedIcon />,
-    title: 'Reliable support',
+    icon: <DataUsageRoundedIcon />,
+    title: 'Designed for Compliance & Reuse',
     description:
-      'Count on our responsive customer support, offering assistance that goes beyond the purchase.',
+      'Usage rights, licensing terms, and retention policies are clearly defined—supporting Data Security and Data Lifecycle Management best practices.',
   },
   {
     icon: <QueryStatsRoundedIcon />,
-    title: 'Precision in every detail',
+    title: 'Analysis-Ready Structure',
     description:
-      'Enjoy a meticulously crafted product where small touches make a significant impact on your overall experience.',
+      'Data is pre-processed and formatted for immediate use in BI tools, data science platforms, or machine learning workflows—maximizing value while minimizing transformation effort.',
   },
 ];
 
@@ -61,7 +68,7 @@ export default function Highlights() {
         color: 'white',
         bgcolor: 'grey.900',
       }}
-    >
+    ><a name="highlights"/>
       <Container
         sx={{
           position: 'relative',
@@ -81,9 +88,7 @@ export default function Highlights() {
             Highlights
           </Typography>
           <Typography variant="body1" sx={{ color: 'grey.400' }}>
-            Explore why our product stands out: adaptability, durability,
-            user-friendly design, and innovation. Enjoy reliable customer support and
-            precision in every detail.
+          Our data products are high-quality, well-documented, and analytics-ready. <br/>Available via AWS Marketplace and GitHub for easy integration, scalability, and collaboration.
           </Typography>
         </Box>
         <Grid container spacing={2}>

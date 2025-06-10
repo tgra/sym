@@ -10,15 +10,14 @@ import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import TwitterIcon from '@mui/icons-material/X';
-import SitemarkIcon from './SitemarkIcon';
+
 
 function Copyright() {
   return (
     <Typography variant="body2" sx={{ color: 'text.secondary', mt: 1 }}>
       {'Copyright © '}
-      <Link color="text.secondary" href="https://mui.com/">
-        Sitemark
+      <Link color="text.secondary" href="https://symantix.co.uk/">
+        Symantix Limited
       </Link>
       &nbsp;
       {new Date().getFullYear()}
@@ -55,7 +54,7 @@ export default function Footer() {
           }}
         >
           <Box sx={{ width: { xs: '100%', sm: '60%' } }}>
-            <SitemarkIcon />
+            
             <Typography variant="body2" gutterBottom sx={{ fontWeight: 600, mt: 2 }}>
               Join the newsletter
             </Typography>
@@ -153,7 +152,7 @@ export default function Footer() {
           <Link color="text.secondary" variant="body2" href="#">
             Privacy
           </Link>
-          <Link color="text.secondary" variant="body2" href="#">
+          <Link color="text.secondary" variant="body2" href="https://www.linkedin.com/company/symantix-ltd/">
             Contact
           </Link>
         </Box>
@@ -189,25 +188,17 @@ export default function Footer() {
           <IconButton
             color="inherit"
             size="small"
-            href="https://github.com/mui"
+            href="https://github.com/Symantix-Ltd"
             aria-label="GitHub"
             sx={{ alignSelf: 'center' }}
           >
             <GitHubIcon />
           </IconButton>
+        
           <IconButton
             color="inherit"
             size="small"
-            href="https://x.com/MaterialUI"
-            aria-label="X"
-            sx={{ alignSelf: 'center' }}
-          >
-            <TwitterIcon />
-          </IconButton>
-          <IconButton
-            color="inherit"
-            size="small"
-            href="https://www.linkedin.com/company/mui/"
+            href="https://www.linkedin.com/company/symantix-ltd"
             aria-label="LinkedIn"
             sx={{ alignSelf: 'center' }}
           >

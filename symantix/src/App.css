@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+.symbol-line { stroke: #57d1e8; stroke-width: 0.8; }
+.symbol-circle { fill: none; stroke: #57d1e8; stroke-width: 0.8; }
+.text { fill: #5a6d83; font-size: 8px; font-family: Arial, sans-serif; font-weight: bold; letter-spacing: 1.5px; }
+
+.light { color: skyblue ;}

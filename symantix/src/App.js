@@ -24,8 +24,8 @@ function App() {
       <CssBaseline enableColorScheme />
       <AppAppBar />
       <Hero />
-      <div>
-        <LogoCollection />
+      
+       
         <Features />
         <Divider />
       
@@ -33,7 +33,7 @@ function App() {
         <Divider />
        
         <Footer />
-      </div>
+     
     </AppTheme>
     </div>
   );

@@ -8,34 +8,32 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import { styled } from '@mui/material/styles';
 
-import DevicesRoundedIcon from '@mui/icons-material/DevicesRounded';
-import EdgesensorHighRoundedIcon from '@mui/icons-material/EdgesensorHighRounded';
-import ViewQuiltRoundedIcon from '@mui/icons-material/ViewQuiltRounded';
 
+
+import DatasetLinkedRoundedIcon from '@mui/icons-material/DatasetLinkedRounded';
+import DataObjectRoundedIcon from '@mui/icons-material/DataObjectRounded';
+import DataExplorationRoundedIcon from '@mui/icons-material/DataExplorationRounded';
 const items = [
   {
-    icon: <ViewQuiltRoundedIcon />,
-    title: 'Dashboard',
+    icon: <DataObjectRoundedIcon />,
+    title: 'Curated, High-Quality Data',
     description:
-      'This item could provide a snapshot of the most important metrics or data points related to the product.',
-    imageLight: `url("${process.env.TEMPLATE_IMAGE_URL || 'https://mui.com'}/static/images/templates/templates-images/dash-light.png")`,
-    imageDark: `url("${process.env.TEMPLATE_IMAGE_URL || 'https://mui.com'}/static/images/templates/templates-images/dash-dark.png")`,
+      'Access expertly cleaned, well-documented, and regularly updated datasets across key domains. Our products are built to fuel reliable insights and machine learning accuracy.',
+    
   },
   {
-    icon: <EdgesensorHighRoundedIcon />,
-    title: 'Mobile integration',
+    icon: <DatasetLinkedRoundedIcon/>,
+    title: 'Ready for Data Integration',
     description:
-      'This item could provide information about the mobile app version of the product.',
-    imageLight: `url("${process.env.TEMPLATE_IMAGE_URL || 'https://mui.com'}/static/images/templates/templates-images/mobile-light.png")`,
-    imageDark: `url("${process.env.TEMPLATE_IMAGE_URL || 'https://mui.com'}/static/images/templates/templates-images/mobile-dark.png")`,
+      'Seamlessly integrate data into your pipelines with formats optimized for performance—CSV, Parquet, API, or cloud delivery. Our products are built for speed, scale, and ease of use.',
+    
   },
   {
-    icon: <DevicesRoundedIcon />,
-    title: 'Available on all platforms',
+    icon: <DataExplorationRoundedIcon />,
+    title: 'Data that creates Actionable Insights' ,
     description:
-      'This item could let users know the product is available on all platforms, such as web, mobile, and desktop.',
-    imageLight: `url("${process.env.TEMPLATE_IMAGE_URL || 'https://mui.com'}/static/images/templates/templates-images/devices-light.png")`,
-    imageDark: `url("${process.env.TEMPLATE_IMAGE_URL || 'https://mui.com'}/static/images/templates/templates-images/devices-dark.png")`,
+      'Each product is crafted with context-rich metadata, usage guides, and analytics-ready structure—helping teams go from raw data to actionable insight with less effort and more confidence.',
+  
   },
 ];
 
@@ -144,23 +142,28 @@ export default function Features() {
   const selectedFeature = items[selectedItemIndex];
 
   return (
-    <Container id="features" sx={{ py: { xs: 8, sm: 16 } }}>
+    <Container id="features" sx={{ py: 0 }}>
       <Box sx={{ width: { sm: '100%', md: '60%' } }}>
-        <Typography
+        <Typography 
           component="h2"
           variant="h4"
           gutterBottom
           sx={{ color: 'text.primary' }}
         >
-          Product features
+          Powerful Data Products, Built for Performance
         </Typography>
         <Typography
           variant="body1"
           sx={{ color: 'text.secondary', mb: { xs: 2, sm: 4 } }}
         >
-          Provide a brief overview of the key features of the product. For example,
-          you could list the number of features, their types or benefits, and
-          add-ons.
+         
+Our data products are crafted for quality, consistency, and usability. Each dataset is thoroughly validated, richly documented, and designed to integrate seamlessly into modern data stacks. Whether you're training machine learning models, building dashboards, or conducting deep analysis, our products deliver clean, structured data you can trust.
+</Typography>
+<Typography
+          variant="body1"
+          sx={{ color: 'text.secondary', mb: { xs: 2, sm: 4 } }}
+        >
+Available on AWS Marketplace for scalable cloud integration and <a href="https://github.com/symantix-ltd">GitHub</a> for easy access, version control, and collaboration—so your team can get started instantly, wherever you work.
         </Typography>
       </Box>
       <Box
@@ -187,6 +190,7 @@ export default function Features() {
                 sx={[
                   (theme) => ({
                     p: 2,
+                   py:2,
                     height: '100%',
                     width: '100%',
                     '&:hover': {
