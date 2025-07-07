@@ -9,7 +9,7 @@ import Hero from './components/Hero';
 import Highlights from './components/Highlights';
 import Features from './components/Features';
 import Footer from './components/Footer';
-
+import Insights from './components/Insights';
 
 function App() {
   return (
@@ -27,6 +27,8 @@ function App() {
         <Highlights />
         <Divider />
        
+       <Insights/>
+       <Divider/>
         <Footer />
      
     </AppTheme>

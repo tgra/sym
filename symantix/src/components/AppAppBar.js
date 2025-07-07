@@ -59,7 +59,9 @@ export default function AppAppBar() {
               <Button variant="text" color="info" size="small" href="#highlights">
                 Highlights
               </Button>
-           
+              <Button variant="text" href='#insights' color="info" size="small">
+                Engineering Insights
+              </Button>
              
             </Box>
           </Box>
@@ -70,7 +72,7 @@ export default function AppAppBar() {
               alignItems: 'center',
             }}
           >
-          
+            
             <Button color="primary" variant="contained" size="small" href="https://www.linkedin.com/company/symantix-ltd/">
               Connect
             </Button>
@@ -106,7 +108,7 @@ export default function AppAppBar() {
                 <MenuItem ><a href="#features">Features</a></MenuItem>
                
                 <MenuItem><a href="#highlights">Highlights</a></MenuItem>
-                
+                <MenuItem><a href="#insights">Insights</a></MenuItem>
             
                 <Divider sx={{ my: 3 }} />
                 <MenuItem>

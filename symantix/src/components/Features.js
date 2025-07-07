@@ -17,9 +17,9 @@ const items = [
   {
     icon: <DataObjectRoundedIcon />,
     title: 'Curated, High-Quality Data',
-    description:
-      'Access expertly cleaned, well-documented, and regularly updated datasets across key domains. Our products are built to fuel reliable insights and machine learning accuracy.',
-    
+    description: 'Access expertly cleaned, well-documented, and regularly updated datasets across key domains. Our products are built to fuel reliable insights and machine learning accuracy.',
+     
+   
   },
   {
     icon: <DatasetLinkedRoundedIcon/>,
@@ -33,7 +33,7 @@ const items = [
     title: 'Data that creates Actionable Insights' ,
     description:
       'Each product is crafted with context-rich metadata, usage guides, and analytics-ready structure—helping teams go from raw data to actionable insight with less effort and more confidence.',
-  
+      
   },
 ];
 
@@ -80,28 +80,11 @@ function MobileLayout({ selectedItemIndex, handleItemClick, selectedFeature }) {
             selected={selectedItemIndex === index}
           />
         ))}
+        
       </Box>
       <Card variant="outlined">
-        <Box
-          sx={(theme) => ({
-            mb: 2,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            minHeight: 280,
-            backgroundImage: 'var(--items-imageLight)',
-            ...theme.applyStyles('dark', {
-              backgroundImage: 'var(--items-imageDark)',
-            }),
-          })}
-          style={
-            items[selectedItemIndex]
-              ? {
-                  '--items-imageLight': items[selectedItemIndex].imageLight,
-                  '--items-imageDark': items[selectedItemIndex].imageDark,
-                }
-              : {}
-          }
-        />
+      
+        
         <Box sx={{ px: 2, pb: 2 }}>
           <Typography
             gutterBottom
@@ -165,6 +148,7 @@ Our data products are crafted for quality, consistency, and usability. Each data
         >
 Available on AWS Marketplace for scalable cloud integration and <a href="https://github.com/symantix-ltd">GitHub</a> for easy access, version control, and collaboration—so your team can get started instantly, wherever you work.
         </Typography>
+        
       </Box>
       <Box
         sx={{
@@ -255,20 +239,16 @@ Available on AWS Marketplace for scalable cloud integration and <a href="https:/
                 width: 420,
                 height: 500,
                 backgroundSize: 'contain',
-                backgroundImage: 'var(--items-imageLight)',
-                ...theme.applyStyles('dark', {
-                  backgroundImage: 'var(--items-imageDark)',
-                }),
+                
+               
               })}
-              style={
-                items[selectedItemIndex]
-                  ? {
-                      '--items-imageLight': items[selectedItemIndex].imageLight,
-                      '--items-imageDark': items[selectedItemIndex].imageDark,
-                    }
-                  : {}
-              }
-            />
+              
+            >
+
+
+  
+
+            </Box>
           </Card>
         </Box>
       </Box>
