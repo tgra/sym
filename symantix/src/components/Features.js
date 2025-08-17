@@ -126,30 +126,8 @@ export default function Features() {
 
   return (
     <Container id="features" sx={{ py: 0 }}>
-      <Box sx={{ width: { sm: '100%', md: '60%' } }}>
-        <Typography 
-          component="h2"
-          variant="h4"
-          gutterBottom
-          sx={{ color: 'text.primary' }}
-        >
-          Powerful Data Products, Built for Performance
-        </Typography>
-        <Typography
-          variant="body1"
-          sx={{ color: 'text.secondary', mb: { xs: 2, sm: 4 } }}
-        >
-         
-Our data products are crafted for quality, consistency, and usability. Each dataset is thoroughly validated, richly documented, and designed to integrate seamlessly into modern data stacks. Whether you're training machine learning models, building dashboards, or conducting deep analysis, our products deliver clean, structured data you can trust.
-</Typography>
-<Typography
-          variant="body1"
-          sx={{ color: 'text.secondary', mb: { xs: 2, sm: 4 } }}
-        >
-Available on AWS Marketplace for scalable cloud integration and <a href="https://github.com/symantix-ltd">GitHub</a> for easy access, version control, and collaboration—so your team can get started instantly, wherever you work.
-        </Typography>
-        
-      </Box>
+      
+     
       <Box
         sx={{
           display: 'flex',
@@ -245,8 +223,42 @@ Available on AWS Marketplace for scalable cloud integration and <a href="https:/
               
             >
 
+<div  >
+      
+      <Typography 
+                component="h2"
+                variant="h6"
+                gutterBottom
+                sx={{ color: 'text.secondary' }}
+              >
+                Introducing    
+              </Typography>
+             
+      
+              </div>
+      
+              <div>
+              <Typography 
+                component="h2"
+                variant="h3"
+                gutterBottom
+                sx={{ color: 'skyblue' }}
+              > 
+                CompanyCompass.co.uk
+              </Typography>
+              <Typography
+                variant="body1"
+                sx={{ color: 'text.secondary', mb: { xs: 2, sm: 4 } }}
+              >
+      <p>Transforming Business Intelligence into Actionable Insights</p>
+      <p>Company Compass provides enriched UK Business Information and Insights for Risk Management, Sales &amp; Marketing, and Company Information Research.</p>
+      <p><a href='https://www.companycompass.co.uk'>Find the right business information today</a></p> 
 
-  
+              </Typography>
+
+              <br/>
+             
+              </div>
 
             </Box>
           </Card>
